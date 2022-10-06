@@ -25,7 +25,14 @@ let prezzoBiglietto= km * 0.21;
 console.log(prezzoBiglietto);
 //variabile che conterà la conta 
 let scontoBiglietto;
+//ciclo if per controllare se i dati inseriti sono effettivamente numeri 
+
+if(isNaN(km) || isNaN(eta)){
+    alert('Puoi inserire solo numeri..');
+    window.location.reload();}
+
 //ciclo if per calcolare il prezzo del biglietto 
+
     if(eta < 18){
         scontoBiglietto= prezzoBiglietto * 0.80;
         console.log(scontoBiglietto);
@@ -43,4 +50,4 @@ let scontoBiglietto;
 
     document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;' ;
     //"Bonus"
-    document.getElementById("kilometri").innerHTML = km ;
+    document.getElementById("kilometri").innerHTML = km ;   
