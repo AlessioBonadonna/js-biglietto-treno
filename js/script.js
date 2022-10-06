@@ -35,9 +35,12 @@ let scontoBiglietto;
         scontoBiglietto=prezzoBiglietto * 0.60;
         // document.getElementById("prova").innerHTML =scontoBiglietto ;
     }   else{
-        scontoBiglietto=prezzoBiglietto
+        scontoBiglietto=prezzoBiglietto;
     }
     //metto il prezzo del biglietto scontato o non con due cifre decimali 
     scontoBiglietto= scontoBiglietto.toFixed(2);
     //stampo nel html il prezzo del biglietto
-    document.getElementById("prezzo").innerHTML = scontoBiglietto ;
+
+    document.getElementById("prezzo").innerHTML = scontoBiglietto + ' &euro;' ;
+    //"Bonus"
+    document.getElementById("kilometri").innerHTML = km ;

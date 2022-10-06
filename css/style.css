@@ -1,0 +1,19 @@
+:root{
+    --rosso: #BF264F;
+    --verde : #027368;
+    --nero : #0D0D0D;
+    --rosa : #F27E7E;
+    --viola : #BF4186;
+    --bianco : white;
+
+}
+body{
+    background-color: var(--verde);
+}
+body div{
+    background-color: var(--rosso);
+}
+h1,p {
+    color:var(--bianco);
+    
+}
